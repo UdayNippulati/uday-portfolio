@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #121212;
+}
+
+header h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  margin: 0;
+  color: white;
+}
+
+header p {
+  font-size: 23px;
+  font-family: "Cousine", monospace;
+
+  margin-top: 0;
+  color: #aaaaaa;
+  padding-left: 7px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Cousine", monospace;
+  font-weight: lighter;
+
+  list-style: none;
+  padding: 0;
+  margin-left: 0px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaaaaa;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+section {
+  margin: 50px 0;
+}
+
+#about {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 225px;
+  max-width: 69%;
+}
+
+#about h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+}
+
+#about p {
+  font-family: "Cousine", monospace;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#skills {
+  height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill-box {
+  background-color: white;
+  color: #121212;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.skill-box p {
+  font-family: "Cousine", monospace;
+  margin-top: 10px;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#experience {
+  background-color: white;
+  padding: 50px;
+  max-width: 60%;
+  margin-left: 185px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#experience h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.experience-left {
+  flex: 1;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+}
+
+.experience-left h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+}
+
+.experience-left p {
+  font-family: "Cousine", monospace;
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.experience-divider {
+  border-left: 2px solid #ddd;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.experience-right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.experience-right h4 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+  margin: 0px;
+}
+
+.experience-right p {
+  font-family: "Cousine", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.experience-company h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+}
+
+.experience-company p {
+  font-family: "Cousine", monospace;
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.experience-details h4 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+  margin: 0px;
+}
+
+.experience-details p {
+  font-family: "Cousine", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 50px;
+  color: #aaaaaa;
+  text-align: center;
+  background-color: #cfe7fe;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 230px;
+}
