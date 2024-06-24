@@ -404,6 +404,17 @@ section {
   line-height: 1.6;
 }
 
+#about img {
+  height: 455px;
+  width: 400px;
+
+  margin-left: 100px;
+}
+
+.hero {
+  display: flex;
+}
+
 #skills {
   height: 100vh;
   background-color: #121212;
@@ -568,6 +579,9 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 230px;
+
+  background-image: url("images/IMG_9453.HEIC");
+  background-size: cover;
 }
 
 /* Media Queries */
@@ -647,6 +661,16 @@ footer {
     text-align: center;
   }
 
+  .hero {
+    flex-direction: column;
+  }
+
+  #about img {
+    height: 400px;
+    width: 200px;
+    margin-left: 0px;
+  }
+
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -665,8 +689,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
-    height: 100vh;
+    margin-left: 46px;
+    height: 160vh;
   }
 
   #experience {
@@ -677,7 +701,7 @@ footer {
   }
 
   #skills {
-    height: 100vh;
+    height: 110vh;
   }
 
   .skill-box {
